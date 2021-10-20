@@ -1,0 +1,13 @@
+language: python
+virtualenv:
+  system_site_packages: true
+python:
+  - "2.7"
+install:
+  - pip install flask
+  - pip install flake8
+script:
+  - flake8 .
+notifications:
+  email:
+  - rajat.gupta@openlabs.co.in
